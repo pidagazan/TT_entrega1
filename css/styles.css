@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+    background-color: rgb(221, 69, 23);
+    color: white;
+
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 2.15;
+}
+
+main {
+    width: 80%;
+    justify-items: center;
+    margin: auto;}
+
+
+.contenedor_header{
+    display: flex;
+    height: 7rem;
+    background-color: goldenrod;
+}
+.nav_bar{
+    display: inline-flex;
+    flex-direction: row;
+    background-color: goldenrod;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.logo{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 10%;
+}
+.logo img{
+    height: 100%;
+}
+
+.logo-carrito{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 10%;
+    margin-top: .5rem;
+}
+.logo-carrito img{
+    height: 60%;
+}
+.nav_bar ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: goldenrod;
+    list-style: none;
+}
+
+.nav_bar ul li{
+    display: block;
+
+    flex-grow: 1;
+    text-align: center; 
+    height: 60%;
+    margin: auto;
+}
+.nav_bar ul li a{
+    display: block;
+    color: white;
+    height: 100%;
+    align-content: center;
+}
+
+.nav_bar ul li a{
+    text-decoration: none;
+}
+
+/* -------------------------------------- HOME ------------------------------------*/
+.contenedor-productos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:space-evenly;
+    column-gap: 20px;
+    justify-content: center;
+
+}
+.contenedor-articulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 25%;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.contenedor-productos article img{
+    height: 200px;
+    width: 100%;
+    border-radius: 4px;
+    padding-top: 10px;
+    object-fit: contain;
+}
+
+.parrafo-home{
+    text-align: center;
+}
+
+.h2_home{
+    display: block;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* --------------------------------------PAGINA CONTACTO ------------------------------------*/
+
+.contenedor_total{
+    margin: 0;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    height: 8rem;
+    align-items:flex-end;
+}
+.contacto_h1{
+    margin-bottom: 30px;
+    font-size: 5rem;
+}
+
+.contenedor_form {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    flex: 1 1 50%;
+}
+
+.contenedor_label_input{
+    margin:auto 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.contenedor_label_input label{
+    padding-left: 40%;
+    text-align: left;
+    margin: 0 auto;
+}
+.contenedor_form div input{
+    height: 75%;
+    margin-left: 10px;
+    width: 12rem;
+}
+
+
+.contenedor_botones button{
+    padding: 4px;
+    margin: 10px;
+    width: 5rem;
+}
+.contenedor_botones{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 100%;
+    height: 20%;
+    margin-top: 15px;
+}
+
+
+.contenedor_mensaje{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    height: 110%;
+}
+
+.contenedor_mensaje label{
+    text-align: center;
+    height: 30%;
+}
+
+.contenedor_mensaje textarea{
+    margin: 0 5%;
+    height: 100%;
+    resize: none;
+}
+
+article button{
+    height: 2.5rem;
+    margin: 5px;
+    width: 8rem;
+    border-radius: 10px;
+    font-weight: 700;
+    
+}
+/* -------------------------------------- FOOTER ------------------------------------*/
+
+
+footer {
+    margin-top: 2rem;
+    height: 9rem;
+    width: 100%;
+    background-color: rgb(255, 94, 0);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 10%;
+}
+
+.footer_ul_icons{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+}
+.footer_ul_icons li img {
+height: 60px;
+margin: 8px;
+}
+
+footer div{
+    align-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+
+.div_sobre_nosotros ul, .div_info_legal ul{
+    
+    list-style: none;
+}
+
+.div_sobre_nosotros ul li a:hover, .div_info_legal ul li a:hover{
+    color: black;
+    font-size: larger;
+}
+
+.div_sobre_nosotros ul li a, .div_info_legal ul li a{
+    text-decoration: none;
+    color: white;
+}

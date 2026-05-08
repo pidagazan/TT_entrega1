@@ -24,13 +24,18 @@
 </div>
 
 
-<body>
+<body class="body_contacto">
     <h1 class="contacto_h1">Contactanos</h1>
     <main class="contenedor_total">
-    
-    <form class="contenedor_form">
+
+<form action="https://formspree.io/f/xgoparpw" method="POST">
+
+
+
+<div class="contenedor_form_mensaje">    
+<div class="contenedor_form">
         
-        <div class="contenedor_label_input">
+<div class="contenedor_label_input">
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" name="nombre"></input>
         </div>
@@ -44,21 +49,55 @@
         <label for="asunto">Asunto</label>
         <input type="text" id="asunto" name="asunto"></input>
         </div>
-        
-
-    </form>
-    <div class="contenedor_mensaje">
-        <label>Mensaje</label>
-        <textarea></textarea>
+  
 
     </div>
     
+    <div class="contenedor_mensaje">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje"></textarea>   
+
+    </div> 
+</div> 
+    
+
+
+
     <div class="contenedor_botones">
-        <button>Enviar</button>
-        <button>Limpiar</button>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </div>
+</form>
+</main>
+<footer>
+    <div class="div_icons">
+        <ul class="footer_ul_icons">
+            <li><img src="./../multimedia/flaticons/instagram.png"></li>
+            <li><img src="./../multimedia/flaticons/youtube.png"></li>
+            <li><img src="./../multimedia/flaticons/whatsapp.png"></li>
+            <li><img src="./../multimedia/flaticons/gorjeo.png"></li>
+        </ul>
     </div>
 
-</main>
+    <div class="div_sobre_nosotros">
+        <h4>Sobre nosotros</h4>
+        <ul>
+            <li><a href="https://google.com">La empresa</a></li>
+            <li><a>Atencion al cliente</a></li>
+            <li><a>Trabajá con nosotros</a></li>
+        </ul>
+    </div>
+    
+    <div class="div_info_legal">
+        <h4>Información legal</h4>
+        <ul>
+            <li><a>Cooperativa</a></li>
+            <li><a>FAQ</a></li>
+            <li><a>Normativa</a></li>
+        </ul>
+    </div>
+</footer>
 
 
 </body>

@@ -6,16 +6,12 @@
 
 html {
     font-size: 62,5%;
-    width: 100vw;
-    height: 100vh;
 }
 
 
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100wv;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.6rem;
     background-color: rgb(221, 69, 23);
@@ -140,25 +136,25 @@ main {
 
 /* --------------------------------------PAGINA CONTACTO ------------------------------------*/
 
+.body_contacto{
+    height: 100vh;
+}
 .contenedor_total{
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: 12srem;
-    width: 100%;
-    padding: 0 20%;
+    width: 80%;
     margin-top: 0;
+    height: 19rem;
 }
 
 .contenedor_total form{
+    width: 100%;
     display: flex;
-    height: 100%;
+    height: 60%;
     flex-direction: column;
 }
 .contenedor_form_mensaje{
     display: flex;
     flex-direction: row;
-    width: 100%;
     height: 70%;
     flex-wrap: nowrap;
     flex: 1 1 100%;
@@ -170,30 +166,37 @@ main {
 .contacto_h1{
     margin-bottom: 30px;
     font-size: 5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .contenedor_form {
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    justify-items: right;
     flex: 1 1 50%;
-    align-content: flex-end;
+    justify-content: flex-end;
+
 
 }
 
 .contenedor_label_input{
-    height: 25%;
-    padding: 6px;
-    box-sizing: border-box;
     display: flex;
-    gap: 10px;
+    flex-direction: row;
+    height: 27%;
+    align-items: center;
+    justify-content: flex-end;
+    
 }
 
 .contenedor_label_input label{
-    display: block;
+    display: inline-block;
+    width: 20%;
+    text-align: left;
 
 }
 .contenedor_form div input{
-    display: block;
+    display: inline-block;
 }
 
 
@@ -208,16 +211,17 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex: 1 1 10%
+    flex: 1 1 10%;
+    flex-wrap: wrap;
 }
 
 
 .contenedor_mensaje{
     display: flex;
     flex-direction: column;
-    flex: 1 1 100%;
+    flex: 1 1 50%;
     height: 100%;
-    padding: 0 10%;
+    padding: 0 5%;
 }
 
 .contenedor_mensaje label{
@@ -243,8 +247,9 @@ article button{
 
 
 footer {
+
     margin-top: 2rem;
-    height: 9rem;
+    height: auto;
     width: 100%;
     background-color: rgb(255, 94, 0);
     display: flex;
@@ -259,6 +264,7 @@ footer {
     justify-content: center;
     gap: 2%;
     flex-shrink: 1;
+    flex-wrap: wrap;
 }
 
 

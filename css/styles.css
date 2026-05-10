@@ -190,13 +190,13 @@ main {
 }
 
 .contenedor_label_input label{
-    display: inline-block;
+    display: inline-flex;
     width: 20%;
     text-align: left;
 
 }
 .contenedor_form div input{
-    display: inline-block;
+    display: inline-flex;
 }
 
 
@@ -295,3 +295,41 @@ footer div{
     color: white;
 }
 
+
+@media (max-width: 580px){
+    .contenedor_total{
+        height: 300px;
+    }
+
+
+     .contenedor_total form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+     }   
+    .contenedor_form{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        flex: 1 1 100%
+        ;
+    }
+    .contenedor_form_mensaje{
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .contenedor_mensaje{
+        flex:   1 1 100%;
+        width: 100%;
+}
+
+    .contenedor_botones{
+        width: auto;
+    }
+    .contenedor_label_input{
+        justify-content: center;
+    }
+
+}

@@ -115,7 +115,6 @@ main {
     border-style: solid;
     border-radius: 10px;
 }
-
 .contenedor-productos article img{
     height: 200px;
     width: 100%;
@@ -238,7 +237,7 @@ main {
 article button{
     height: 2.5rem;
     margin: 5px;
-    width: 8rem;
+    width: auto;
     border-radius: 10px;
     font-weight: 700;
     
@@ -329,7 +328,52 @@ footer div{
         width: auto;
     }
     .contenedor_label_input{
-        justify-content: center;
+        justify-content: space-around;
     }
 
+
+
+    .contenedor_header{
+    flex-direction: column;
+    height: 30%;
+    flex: 0 0 1;
+}
+
+.nav_bar{
+    flex-direction: column;
+    display: flex;
+}
+
+.nav_bar ul{
+    flex-direction: column;
+    display: flex;
+    font-size: smaller;
+}
+
+.logo{
+    width: 100%;
+}
+.logo img{
+    height: 50px;
+}
+.logo-carrito{
+    width: 100%;
+}
+
+.logo-carrito img{
+    height: 50px;
+}
+
+.contacto_h1{
+    font-size:larger;
+}
+
+.contenedor-productos{
+    flex-direction: column;
+}
+
+
+.contenedor-articulo{
+    width: 100%;
+}
 }

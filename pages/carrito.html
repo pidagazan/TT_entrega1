@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/styles.css"> 
+    <title>Carrito</title>
+</head>
+<body>
+    <div class="contenedor_header">
+        <div class="logo">
+            <img src="./../multimedia/flaticons/soldador (1).png">
+        </div>
+    
+        <nav class="nav_bar">
+   
+            <ul>
+                <li><a href="./../index.html">Inicio</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a>ALGUNA OTRA PAGINA</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo-carrito">
+            <p id="contador_carrito">0</p>
+            <a href="./carrito.html">
+            <img src="./../multimedia/flaticons/carrito-de-compras.png">
+            </a>
+            
+        </div>
+
+    </div>
+    
+    <div class="contenedor_p_carrito" id="contenedor_p_carrito">
+        <ul id="lista_p_carrito">
+
+        </ul>
+        <div class="contenedor_botones_p_carrito">
+            <button id="boton_vaciar_carrito">Vaciar carrito</button>
+            <button id="boton_finalizar_compra">Finalizar compra</button>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="div_icons">
+        <ul class="footer_ul_icons">
+            <a href="https://www.instagram.com"><li><img src="./../multimedia/flaticons/instagram.png"></li></a>
+            <a href="https://www.youtube.com"><li><img src="./../multimedia/flaticons/youtube.png"></li></a>
+            <a href="https://www.whatsapp.com"><li><img src="./../multimedia/flaticons/whatsapp.png"></li></a>
+            <a href="https://www.x.com"><li><img src="./../multimedia/flaticons/gorjeo.png"></li></a>
+        </ul>
+    </div>
+
+    <div class="div_sobre_nosotros">
+        <h4>Sobre nosotros</h4>
+        <ul>
+            <li><a href="https://google.com">La empresa</a></li>
+            <li><a>Atencion al cliente</a></li>
+            <li><a>Trabajá con nosotros</a></li>
+        </ul>
+    </div>
+    
+    <div class="div_info_legal">
+        <h4>Información legal</h4>
+        <ul>
+            <li><a>Cooperativa</a></li>
+            <li><a>FAQ</a></li>
+            <li><a>Normativa</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<script type="module" src="./../js/funcionesCarrito.js"></script>
+<script type="module" src="./../js/carrito_ui.js"></script>
+    
+</html>

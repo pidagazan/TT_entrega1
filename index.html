@@ -23,7 +23,13 @@
         </ul>
     </nav>
 
-    <div class="logo-carrito"><img src="./multimedia/flaticons/carrito-de-compras.png"></div>
+    <div class="logo-carrito">
+        <p id="contador_carrito">0</p>
+        <a href="./pages/carrito.html">
+        <img src="./multimedia/flaticons/carrito-de-compras.png">
+        </a>
+        
+    </div>
 </div>
     <h1>Bienvenido a la tienda</h1>
     
@@ -32,7 +38,11 @@
     
         <h2 class="h2_home">Nuestros productos</h2>
 <main>
-    <section class="contenedor-productos">
+    <section class="contenedor-productos" id="contenedor-productos">
+        
+        
+        
+        <!-- 
         <article class="contenedor-articulo">
             <img src="./multimedia/autogena.jpeg"></img>
             <h3>Soldadora autógena</h3>
@@ -40,10 +50,6 @@
             <p>Precio: 100$</p>
             <button>Agregar al carrito</button>
         </article>
-    
-    
-    
-    
     
         <article class="contenedor-articulo">
             <img src="./multimedia/inverter.jpeg">
@@ -78,7 +84,7 @@
         </article>
     
     
-    
+    -->
     </section>
 
 </main>
@@ -88,10 +94,10 @@
 <footer>
     <div class="div_icons">
         <ul class="footer_ul_icons">
-            <li><img src="./multimedia/flaticons/instagram.png"></li>
-            <li><img src="./multimedia/flaticons/youtube.png"></li>
-            <li><img src="./multimedia/flaticons/whatsapp.png"></li>
-            <li><img src="./multimedia/flaticons/gorjeo.png"></li>
+            <a href="https://www.instagram.com"><li><img src="./multimedia/flaticons/instagram.png"></li></a>
+            <a href="https://www.youtube.com"><li><img src="./multimedia/flaticons/youtube.png"></li></a>
+            <a href="https://www.whatsapp.com"><li><img src="./multimedia/flaticons/whatsapp.png"></li></a>
+            <a href="https://www.x.com"><li><img src="./multimedia/flaticons/gorjeo.png"></li></a>
         </ul>
     </div>
 
@@ -115,4 +121,6 @@
 </footer>
 
 </body>
+<script type="module" src="./js/ui_index.js"></script>
+
 </html>

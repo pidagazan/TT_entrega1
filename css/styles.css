@@ -17,6 +17,7 @@ body {
     background-color: rgb(221, 69, 23);
     color: white;
     flex: 0 0 100%;
+    height: 100vh;
 }
 
 
@@ -49,7 +50,7 @@ main {
 
 .logo{
     display: flex;
-    height: 100%;
+    height: 100%;   
     justify-content: center;
     width: 10%;
 }
@@ -59,13 +60,26 @@ main {
 
 .logo-carrito{
     display: flex;
-    height: 100%;
+    flex-direction: row;
+    height: auto;
     justify-content: center;
     width: 10%;
     margin-top: .5rem;
 }
 .logo-carrito img{
     height: 60%;
+}
+.logo-carrito a{
+    display: block;
+    align-content: center;
+    text-align: center;
+}
+.logo-carrito p{
+    display: block;
+    width: 20%;
+    text-align: center;
+    align-content: center;
+    
 }
 .nav_bar ul{
     display: flex;
@@ -293,7 +307,53 @@ footer div{
     text-decoration: none;
     color: white;
 }
+/* -------------------------------------- CARRITO.HTML ------------------------------------*/
+.contenedor_p_carrito{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 800px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
+.contenedor_botones_p_carrito{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_botones_p_carrito button{
+    height: 150%;
+    margin-right: 10px;
+}
+
+
+#lista_p_carrito {
+    list-style-type: none;  
+}
+.contenedor_articulo_carrito{
+    display: flex;
+    justify-content: space-evenly;
+    border-style: solid;
+    margin: 2%;
+}
+
+
+.contenedor_articulo_carrito div img{
+    display: block;
+    height:150px;   
+    padding: 10px;
+}
+
+.contenedor_articulo_carrito div{
+    width: 150px;
+    margin: 0;
+    padding: auto;
+    align-content: center;
+}
 
 @media (max-width: 580px){
     .contenedor_total{
@@ -376,4 +436,6 @@ footer div{
 .contenedor-articulo{
     width: 100%;
 }
+
+
 }

@@ -40,9 +40,10 @@ export const renderizarCarrito = () => {
         let contenedor_imagen = document.createElement("div")
         let contenedor_texto = document.createElement("div")
 
-        titulo.innerText = producto.nombre
-        precio.innerText = `Precio: $${producto.precio}`
-        contenedor_imagen.innerHTML = `<img src=../${producto.ruta_imagen}></img>`
+        let titulo_slice = producto.title
+        titulo.innerText = `${titulo_slice.slice(0,15)}...`
+        precio.innerText = `Precio: $${producto.price}`
+        contenedor_imagen.innerHTML = `<img src=${producto.image}></img>`
 
         contenedor.className = "contenedor_articulo_carrito"
         

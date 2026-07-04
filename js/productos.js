@@ -17,3 +17,6 @@ const ARRAY_PRODUCTOS = [
     descripcion:"Soldadura por arco electrico basada en transformador",precio: 150,ruta_imagen:"./multimedia/Transformador.jpg"}
                             ];
 export { ARRAY_PRODUCTOS }                            
+
+
+

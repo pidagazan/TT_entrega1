@@ -355,6 +355,10 @@ footer div{
     align-content: center;
 }
 
+.boton_eliminar_articulo_carrito{
+    height: 30px;
+    align-self: center;
+}
 @media (max-width: 580px){
     .contenedor_total{
         height: 300px;
